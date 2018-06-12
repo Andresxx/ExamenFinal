@@ -3,6 +3,7 @@ delete from restaurant;
 delete from Category;
 delete from city;
 
+delete from  perfil_usuario;
 delete from User;
 
 
@@ -44,4 +45,10 @@ INSERT INTO restaurant(id, name,phone,description,likes,category_id,city_id, lat
 INSERT INTO user (id,admin,name,last_name,password,username,city_id) VALUES (1,1,'Grillo','Pepe','$2a$10$QVUYllnp1PMD4aQN/TDese/L78dN0ABWhnolJl0xmMtmTt.7ajx72','a',50);
 INSERT INTO user (id,admin,name,last_name,password,username,city_id) VALUES (2,0,'ElHonrado','Juan','$2a$10$QVUYllnp1PMD4aQN/TDese/L78dN0ABWhnolJl0xmMtmTt.7ajx72','aa',57);
 INSERT INTO user (id,admin,name,last_name,password,username,city_id) VALUES (3,0,'Juan','Solo','$2a$10$QVUYllnp1PMD4aQN/TDese/L78dN0ABWhnolJl0xmMtmTt.7ajx72','aaa',50);
+
+
+INSERT INTO perfil_usuario(id, name,count_comment) VALUES (10,'Pasivo',0);
+INSERT INTO perfil_usuario(id, name,count_comment) VALUES (11,'Activo',1);
+INSERT INTO perfil_usuario(id, name,count_comment) VALUES (12,'Comentdor',5);
+INSERT INTO perfil_usuario(id, name,count_comment) VALUES (13,'Gran Comentador',100);
 

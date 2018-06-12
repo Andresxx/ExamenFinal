@@ -34,6 +34,12 @@ public class User {
     @JoinColumn(name="city_id")
     private City city;
 
+    @ManyToOne
+    @JoinColumn(name="perfil_usuario_id")
+    private PerfilUsuario perfilUsuario;
+
+
+
     public Long getId() {
         return id;
     }

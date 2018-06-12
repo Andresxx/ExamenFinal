@@ -56,15 +56,26 @@
                 </div>
 
                 <div class="form-group">
-                    <div class="col-sm-9">
-                        <select name="city" class="select">
-                            <option th:each="city : ${cities}"
-                                    th:value="${city.id}"
-                                    th:text="${city.nombre}">
-                            </option>
-                        </select>
-                    </div>
+                <div class="col-sm-9">
+                    <select name="city" class="select">
+                        <option th:each="city : ${cities}"
+                                th:value="${city.id}"
+                                th:text="${city.nombre}">
+                        </option>
+                    </select>
                 </div>
+            </div>
+
+                <!--<div class="form-group">-->
+                    <!--<div class="col-sm-9">-->
+                        <!--<select name="city" class="select">-->
+                            <!--<option th:each="perfil : ${perfiles}"-->
+                                    <!--th:value="${perfil.id}"-->
+                                    <!--th:text="${perfil.name}">-->
+                            <!--</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
 
                 <div class="form-group">
                     <div class="col-sm-9">

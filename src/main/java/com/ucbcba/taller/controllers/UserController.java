@@ -4,9 +4,11 @@ package com.ucbcba.taller.controllers;
 
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import com.ucbcba.taller.entities.City;
+import com.ucbcba.taller.entities.PerfilUsuario;
 import com.ucbcba.taller.entities.Restaurant;
 import com.ucbcba.taller.entities.User;
 import com.ucbcba.taller.services.CityService;
+import com.ucbcba.taller.services.PerfilService;
 import com.ucbcba.taller.services.SecurityService;
 import com.ucbcba.taller.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,14 +35,18 @@ public class UserController {
     @Autowired
     private CityService cityService;
 
-    //@Autowired
-    //private UserValidator userValidator;
+//    @Autowired
+//    private PerfilService perfilService;
+
 
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String registrationInit(Model model) {
         model.addAttribute("user", new User());
         Iterable<City> cityList = cityService.listAllCities();
         model.addAttribute("cities", cityList);
+//
+//        Iterable<PerfilUsuario> perfilList = perfilService.listaAllPerfiles();
+//        model.addAttribute("perfiles", perfilList);
         return "registration";
     }
 

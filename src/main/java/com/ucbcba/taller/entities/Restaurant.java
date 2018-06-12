@@ -48,6 +48,7 @@ public class Restaurant {
 
     private String rankin="";
 
+
     public String getRankin() {
         return rankin;
     }
